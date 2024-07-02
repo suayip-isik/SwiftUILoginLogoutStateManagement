@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
         VStack {
             Text("Hello, Settings page!")
-            Button("Logout", systemImage: "rectangle.portrait.and.arrow.right.fill", action: { })
+            Button("Logout", systemImage: "rectangle.portrait.and.arrow.right.fill", action: {
+                authViewModel.signOut()
+            })
                 .buttonStyle(.borderedProminent)
         }
     }

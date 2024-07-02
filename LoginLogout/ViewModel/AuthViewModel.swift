@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+@MainActor
+class AuthViewModel: ObservableObject {
+    @Published var user: User?
+    
+    init() {
+        
+    }
+    
+    func signIn() async throws {
+        user = User(id: "0", userId: "1234")
+    }
+    
+    func signOut() {
+        user = nil
+    }
+}
