@@ -54,6 +54,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		025E14CF2C344F7A00DAC2CC /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				0299979C2C34033300328895 /* MainTabNavigation.swift */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
 		029997792C3402C800328895 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +103,7 @@
 		029997932C3402D600328895 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				025E14CF2C344F7A00DAC2CC /* Navigations */,
 				029997952C3402EB00328895 /* MainTabViews */,
 				029997942C3402E000328895 /* AuthViews */,
 			);
@@ -115,7 +124,6 @@
 				029997982C34031900328895 /* HomeView.swift */,
 				0299979A2C34032200328895 /* ProfileView.swift */,
 				0299979E2C3403A000328895 /* SettingsView.swift */,
-				0299979C2C34033300328895 /* MainTabNavigation.swift */,
 			);
 			path = MainTabViews;
 			sourceTree = "<group>";
